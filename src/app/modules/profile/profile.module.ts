@@ -12,7 +12,7 @@ import {
   CardsModule,
   DropdownMenusModule,
   WidgetsModule,
-} from '../../_metronic/partials';
+} from '../../core/partials';
 
 @NgModule({
   declarations: [

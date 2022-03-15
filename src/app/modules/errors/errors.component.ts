@@ -7,7 +7,7 @@ import {
   ScrollTopComponent,
   StickyComponent,
   ToggleComponent,
-} from '../../_metronic/kt/components';
+} from '../../core/kt/components';
 
 @Component({
   selector: 'app-errors',

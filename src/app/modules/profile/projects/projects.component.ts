@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IconUserModel } from '../../../_metronic/partials';
+import { IconUserModel } from '../../../core/partials';
 
 @Component({
   selector: 'app-projects',
