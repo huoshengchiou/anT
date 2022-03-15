@@ -9,9 +9,10 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationModule } from '../../core/services/i18n';
-import { LayoutComponent } from './layout.component';
+import { LayoutAComponent } from './layout-a/layout-a.component';
+import { LayoutBComponent } from './layout-b/layout-b.component';
 import { ExtrasModule } from '../partials/layout/extras/extras.module';
-import { Routing } from '../../pages/routing';
+import { RoutingA, RoutingB } from '../../pages/routing';
 import { AsideComponent } from './components/aside/aside.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContentComponent } from './components/content/content.component';
@@ -33,14 +34,18 @@ import { EngagesComponent } from '../partials/layout/engages/engages.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
-    children: Routing,
+    component: LayoutAComponent,
+    children: RoutingA,
+  },
+  {
+    path: '',
+    component: LayoutBComponent,
+    children: RoutingB,
   },
 ];
 
 @NgModule({
   declarations: [
-    LayoutComponent,
     AsideComponent,
     HeaderComponent,
     ContentComponent,
@@ -52,6 +57,8 @@ const routes: Routes = [
     PageTitleComponent,
     HeaderMenuComponent,
     EngagesComponent,
+    LayoutAComponent,
+    LayoutBComponent,
   ],
   imports: [
     CommonModule,

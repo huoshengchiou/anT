@@ -1,13 +1,6 @@
 import { Routes } from '@angular/router';
 
-const Routing: Routes = [
-  {
-    path: 'fa',
-    loadChildren: () =>
-      import('../features/feature-a/pages/page-a/page-a.module').then(
-        (m) => m.PageAModule
-      ),
-  },
+const RoutingA: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
@@ -56,4 +49,18 @@ const Routing: Routes = [
   },
 ];
 
-export { Routing };
+const RoutingB: Routes = [
+  {
+    path: 'fa',
+    loadChildren: () =>
+      import('../features/feature-a/pages/page-a/page-a.module').then(
+        (m) => m.PageAModule
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: 'error/404',
+  },
+];
+
+export { RoutingA, RoutingB };

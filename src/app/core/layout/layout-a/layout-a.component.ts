@@ -5,15 +5,15 @@ import {
   ElementRef,
   AfterViewInit,
 } from '@angular/core';
-import { LayoutService } from './core/layout.service';
-import { LayoutInitService } from './core/layout-init.service';
+import { LayoutService } from '../core/layout.service';
+import { LayoutInitService } from '../core/layout-init.service';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss'],
+  selector: 'app-layout-a',
+  templateUrl: './layout-a.component.html',
+  styleUrls: ['./layout-a.component.scss'],
 })
-export class LayoutComponent implements OnInit, AfterViewInit {
+export class LayoutAComponent implements OnInit, AfterViewInit {
   // Public variables
   selfLayout = 'default';
   asideSelfDisplay: true;
@@ -54,7 +54,8 @@ export class LayoutComponent implements OnInit, AfterViewInit {
     // build view by layout config settings
     this.asideDisplay = this.layout.getProp('aside.display') as boolean;
     this.toolbarDisplay = this.layout.getProp('toolbar.display') as boolean;
-    this.contentContainerClasses = this.layout.getStringCSSClasses('contentContainer');
+    this.contentContainerClasses =
+      this.layout.getStringCSSClasses('contentContainer');
     this.asideCSSClasses = this.layout.getStringCSSClasses('aside');
     this.headerCSSClasses = this.layout.getStringCSSClasses('header');
     this.headerHTMLAttributes = this.layout.getHTMLAttributes('headerMenu');
