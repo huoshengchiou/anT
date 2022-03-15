@@ -12,7 +12,7 @@ import { TranslationModule } from '../../core/services/i18n';
 import { LayoutAComponent } from './layout-a/layout-a.component';
 import { LayoutBComponent } from './layout-b/layout-b.component';
 import { ExtrasModule } from '../partials/layout/extras/extras.module';
-import { RoutingA, RoutingB } from '../../pages/routing';
+import { RoutingA, RoutingB } from '../routing';
 import { AsideComponent } from './components/aside/aside.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContentComponent } from './components/content/content.component';

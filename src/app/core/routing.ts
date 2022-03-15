@@ -4,12 +4,14 @@ const RoutingA: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+      import('../features/dashboard/dashboard.module').then(
+        (m) => m.DashboardModule
+      ),
   },
   {
     path: 'builder',
     loadChildren: () =>
-      import('./builder/builder.module').then((m) => m.BuilderModule),
+      import('../features/builder/builder.module').then((m) => m.BuilderModule),
   },
   {
     path: 'crafted/pages/profile',
