@@ -7,7 +7,7 @@ import {
   ScrollTopComponent,
   StickyComponent,
   ToggleComponent,
-} from '../../core/kt/components';
+} from '../../kt/components';
 
 @Component({
   selector: 'app-errors',
