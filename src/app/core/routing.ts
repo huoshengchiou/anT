@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 
+// 根據不同的routing set切換layout
+
 const RoutingA: Routes = [
   {
     path: 'dashboard',
@@ -57,6 +59,20 @@ const RoutingB: Routes = [
     loadChildren: () =>
       import('../features/feature-a/pages/page-a/page-a.module').then(
         (m) => m.PageAModule
+      ),
+  },
+  {
+    path: 'fa2',
+    loadChildren: () =>
+      import('../features/feature-a/pages/page-a2/page-a2.module').then(
+        (m) => m.PageA2Module
+      ),
+  },
+  {
+    path: 'fb',
+    loadChildren: () =>
+      import('../features/feature-b/pages/page-b/page-b.module').then(
+        (m) => m.PageBModule
       ),
   },
   {

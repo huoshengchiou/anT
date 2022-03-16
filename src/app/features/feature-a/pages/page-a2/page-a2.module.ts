@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+
+import { PageA2Component } from './page-a2.component';
 import { PublicModule } from '../../components/public/public.module';
-import { PageAComponent } from './page-a.component';
 
 @NgModule({
-  declarations: [PageAComponent],
+  declarations: [PageA2Component],
   imports: [
     CommonModule,
     PublicModule,
     RouterModule.forChild([
       {
         path: '',
-        component: PageAComponent,
+        component: PageA2Component,
       },
     ]),
   ],
 })
-export class PageAModule {}
+export class PageA2Module {}
