@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { getCSSVariableValue } from '../../../../../kt/_utils';
+import { getCSSVariableValue } from '../../../../../metronic-gift/kt/_utils';
 @Component({
   selector: 'app-mixed-widget9',
   templateUrl: './mixed-widget9.component.html',

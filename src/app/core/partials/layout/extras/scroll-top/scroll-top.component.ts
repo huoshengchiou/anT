@@ -7,7 +7,7 @@ import {
   MenuComponent,
   ToggleComponent,
   DrawerComponent,
-} from '../../../../kt/components';
+} from '../../../../metronic-gift/kt/components';
 
 @Component({
   selector: 'app-scroll-top',

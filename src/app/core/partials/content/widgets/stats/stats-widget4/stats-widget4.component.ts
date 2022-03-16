@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ApexOptions } from 'ng-apexcharts';
-import { getCSSVariableValue } from '../../../../../kt/_utils';
+import { getCSSVariableValue } from '../../../../../metronic-gift/kt/_utils';
 
 @Component({
   selector: 'app-stats-widget4',

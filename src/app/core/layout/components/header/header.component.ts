@@ -9,7 +9,7 @@ import {
 import { NavigationCancel, NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { LayoutService } from '../../metronic-core/layout.service';
-import { MenuComponent } from '../../../kt/components';
+import { MenuComponent } from '../../../metronic-gift/kt/components';
 
 @Component({
   selector: 'app-header',

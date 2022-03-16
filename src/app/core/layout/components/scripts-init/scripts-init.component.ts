@@ -10,7 +10,7 @@ import {
   StickyComponent,
   MenuComponent,
   ScrollComponent,
-} from '../../../kt/components';
+} from '../../../metronic-gift/kt/components';
 import { PageInfoService } from '../../metronic-core/page-info.service';
 
 @Component({

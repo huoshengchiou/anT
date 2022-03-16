@@ -14,7 +14,7 @@ import {
   DrawerComponent,
   ToggleComponent,
   ScrollComponent,
-} from '../../../kt/components';
+} from '../../../metronic-gift/kt/components';
 
 @Component({
   selector: 'app-aside',

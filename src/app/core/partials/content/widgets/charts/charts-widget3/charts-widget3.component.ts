@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { getCSSVariableValue } from '../../../../../kt/_utils';
+import { getCSSVariableValue } from '../../../../../metronic-gift/kt/_utils';
 
 @Component({
   selector: 'app-charts-widget3',
