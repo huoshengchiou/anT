@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IconUserModel } from '../../../core/partials';
+import { IconUserModel } from '../../../partials';
 
 @Component({
   selector: 'app-projects',

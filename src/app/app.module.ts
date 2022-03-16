@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { InlineSVGModule } from 'ng-inline-svg';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { AuthService } from './modules/auth/services/auth.service';
+import { AuthService } from './core/modules/auth/services/auth.service';
 
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';

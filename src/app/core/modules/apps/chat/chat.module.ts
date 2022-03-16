@@ -11,7 +11,7 @@ import {
   DropdownMenusModule,
   ChatInnerModule,
   CardsModule,
-} from '../../../core/partials';
+} from '../../../partials';
 
 @NgModule({
   declarations: [
