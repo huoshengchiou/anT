@@ -1,3 +1,4 @@
+// global console  off in prod
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
@@ -12,5 +13,8 @@ export class LoggerService {
   }
   error(msg: string) {
     this.logger && console.error(msg);
+  }
+  print(index: string, msg: any) {
+    this.logger && console.log(index, msg);
   }
 }

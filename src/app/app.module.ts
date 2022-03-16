@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 
 // #fake-start#
-import { FakeAPIService } from './_fake/fake-api.service';
+import { FakeAPIService } from './core/services/_fake/fake-api.service';
 
 // #fake-end#
 
