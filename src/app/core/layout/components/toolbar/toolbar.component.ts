@@ -5,7 +5,7 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { LayoutService } from '../../core/layout.service';
+import { LayoutService } from '../../metronic-core/layout.service';
 
 @Component({
   selector: 'app-toolbar',

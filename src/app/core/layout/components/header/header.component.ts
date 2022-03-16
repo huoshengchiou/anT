@@ -1,8 +1,15 @@
-import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild,} from '@angular/core';
-import {NavigationCancel, NavigationEnd, Router} from '@angular/router';
-import {Subscription} from 'rxjs';
-import {LayoutService} from '../../core/layout.service';
-import {MenuComponent} from '../../../kt/components';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
+import { NavigationCancel, NavigationEnd, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { LayoutService } from '../../metronic-core/layout.service';
+import { MenuComponent } from '../../../kt/components';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +24,7 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   pageTitleAttributes: {
     [attrName: string]: string | boolean;
   };
-  @ViewChild('ktPageTitle', {static: true}) ktPageTitle: ElementRef;
+  @ViewChild('ktPageTitle', { static: true }) ktPageTitle: ElementRef;
 
   private unsubscribe: Subscription[] = [];
 
@@ -26,7 +33,8 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.headerContainerCssClasses = this.layout.getStringCSSClasses('headerContainer');
+    this.headerContainerCssClasses =
+      this.layout.getStringCSSClasses('headerContainer');
     this.asideDisplay = this.layout.getProp('aside.display') as boolean;
     this.headerLeft = this.layout.getProp('header.left') as string;
     this.pageTitleCssClasses = this.layout.getStringCSSClasses('pageTitle');
@@ -53,6 +61,5 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     this.unsubscribe.push(routerSubscription);
   }
 
-  ngOnDestroy() {
-  }
+  ngOnDestroy() {}
 }

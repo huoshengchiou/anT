@@ -1,7 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
-import { LayoutService } from '../../../core/layout.service';
-import { PageInfoService, PageLink } from '../../../core/page-info.service';
+import { LayoutService } from '../../../metronic-core/layout.service';
+import {
+  PageInfoService,
+  PageLink,
+} from '../../../metronic-core/page-info.service';
 
 @Component({
   selector: 'app-page-title',

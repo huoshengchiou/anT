@@ -5,8 +5,8 @@ import {
   ElementRef,
   AfterViewInit,
 } from '@angular/core';
-import { LayoutService } from '../core/layout.service';
-import { LayoutInitService } from '../core/layout-init.service';
+import { LayoutService } from '../metronic-core/layout.service';
+import { LayoutInitService } from '../metronic-core/layout-init.service';
 
 @Component({
   selector: 'app-layout-a',
