@@ -1,15 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DesignsystemComponent } from './components/designsystem/designsystem.component';
-
-
+import { LoadingModule } from './components/loading/loading.module';
 
 @NgModule({
-  declarations: [
-    DesignsystemComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [LoadingModule],
 })
-export class SharedModule { }
+export class SharedModule {}
