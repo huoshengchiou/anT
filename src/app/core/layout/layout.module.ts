@@ -8,7 +8,7 @@ import {
   NgbTooltipModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationModule } from '../../core/services/i18n';
+import { TranslationModule } from '../modules/i18n';
 import { LayoutAComponent } from './layout-a/layout-a.component';
 import { LayoutBComponent } from './layout-b/layout-b.component';
 import { ExtrasModule } from '../partials/layout/extras/extras.module';

@@ -12,7 +12,7 @@ import {
   CardsModule,
   DropdownMenusModule,
   WidgetsModule,
-} from '../../partials';
+} from '../../core/partials';
 
 @NgModule({
   declarations: [
