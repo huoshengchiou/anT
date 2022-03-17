@@ -77,8 +77,8 @@ const RoutingB: Routes = [
   {
     path: 'fb',
     loadChildren: () =>
-      import('../features/feature-b/pages/page-b/page-b.module').then(
-        (m) => m.PageBModule
+      import('../features/feature-b/feature-b.module').then(
+        (m) => m.FeatureBModule
       ),
   },
   {

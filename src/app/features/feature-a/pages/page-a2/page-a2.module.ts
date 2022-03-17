@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { PageA2Component } from './page-a2.component';
-import { PublicModule } from '../../components/public/public.module';
+import { PublicModule } from '../../components/public.module';
 
 @NgModule({
   declarations: [PageA2Component],
